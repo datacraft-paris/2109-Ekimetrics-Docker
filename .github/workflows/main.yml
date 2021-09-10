@@ -12,17 +12,9 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  pytest:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: install pytest
-      run: pip install pytest
-    - name: testing
-      run: pytest
+   
 
-  build:
-    needs: pytest
+  build: 
     runs-on: ubuntu-latest
 
 
