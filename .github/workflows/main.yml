@@ -33,5 +33,5 @@ jobs:
       name: Publish to Azure App 
       with: 
         app-name: datacraft-streamlit-app
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_BIS }}
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         images: 'axreki/dockercraft:${{ github.sha }}'
