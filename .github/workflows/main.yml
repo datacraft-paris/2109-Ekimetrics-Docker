@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the docker image
-      run : docker build  -t axreki/dockecraft:${{ github.sha }} .
+      run : docker build  . --file Dockerfile --tag axreki/dockercraft:${{ github.sha }} 
 
 
     - name: Log in to Docker Hub
